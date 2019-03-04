@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>SexyLightBox</title>
+
+    <!--<link rel="stylesheet" href="global.css" type="text/css" media="all" />-->
+
+    <script src="http://www.jq22.com/jquery/1.3.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+
+    <script type="text/javascript" src="sexylightbox.v2.3.jquery.min.js"></script>
+
+    <link rel="stylesheet" href="sexylightbox.css" type="text/css" media="all" />
+
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            SexyLightbox.initialize({ color: 'white' });
+
+            $("#showPopupDialog").click(function () {
+                 
+                $("#hidePopupDialog").attr('href', 'demo-iframe.html?height=340&width=580');
+
+                $("#hidePopupDialog").click();
+            });
+        });
+
+    </script>
+
+
+    <style>
+        .alertbox {
+            background: url(images/dialog-help.png) no-repeat scroll left top;
+            margin: 0 10px;
+            padding: 0 0 5px 40px;
+            font-family: Verdana;
+            font-size: 12px;
+            text-align: left;
+        }
+
+            .alertbox .buttons {
+                text-align: right;
+            }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div id="top">
+
+        <div class="hastoc">
+
+            <div>
+
+                <h3>AJAX Content</h3>
+
+                <p>
+                    <a id="showPopupDialog">弹出对话框</a>
+                    <a id="hidePopupDialog" style="display:none"
+                       href="demo-data.html?height=340&width=680"
+                       rel="sexylightbox" title="Contenido cargado via AJAX">Get data!</a>
+
+                </p>
+
+                <p>
+
+                    <a href="demo-login.html?height=150&width=350" rel="sexylightbox">Login Box</a>
+
+                </p>
+
+                <p>
+
+                    <a href="demo-shake.html?height=150&width=350" rel="sexylightbox">Shake Effect</a>
+
+                </p>
+
+                <p>
+
+                    <a href="demo-alert.php?height=90&width=430&modal=1&background=white" rel="sexylightbox">AlertBox</a>
+
+                </p>
+
+<pre>
+&lt;a <b>href</b>="demo-data.html?<b>height</b>=140&<b>width</b>=480"  <b>rel</b>="sexylightbox" <b>title</b>="Contenido cargado via AJAX."&gt;Get data&lt;/a&gt;
+&lt;a <b>href</b>="demo-login.html?<b>height</b>=150&<b>width</b>=350" <b>rel</b>="sexylightbox" &gt;Login Box&lt;/a&gt;
+&lt;a <b>href</b>="demo-shake.html?<b>height</b>=150&<b>width</b>=350" <b>rel</b>="sexylightbox" &gt;Shake Effect&lt;/a&gt;
+&lt;a <b>href</b>="demo-alert.php?<b>height</b>=90&<b>width</b>=430&<b>modal</b>=1&<b>background</b>=white" <b>rel</b>="sexylightbox" &gt;AlertBox&lt;/a&gt;
+</pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
